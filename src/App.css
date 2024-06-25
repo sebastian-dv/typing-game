@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+#wpm {
+	font-size: 40px;
+}
+
+#quote-display {
+	font-size: 25px;
+	width: 700px;
+}
+
+.correct {
+	color: green;
+}
+
+.incorrect {
+	color: red;
+}
+
+.underline {
+	text-decoration-line: underline;
+}
+
+#input-display {
+	font-size: 25px;
+	width: 700px;
+	height: 200px;
+} 
