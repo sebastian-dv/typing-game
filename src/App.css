@@ -27,6 +27,12 @@
 	font-size: 30px;
 	width: 700px;
 	padding: 20px;
+	list-style-type: none;
+}
+
+li {
+	display: inline-flex;
+	margin: 0px 5px;
 }
 
 .correct {
