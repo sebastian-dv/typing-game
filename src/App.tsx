@@ -5,20 +5,19 @@ import Result from './Result'
 
 
 function App() {
-	const [status, setStatus] = React.useState('playing')
+	const [screen, setScreen] = React.useState<any>(null);
 
-	const handleChangeStatus = (status: string) => {
-		setStatus(status)
+	const showResultScreen = (totalTime: number, totalWords: number, correctWords: number) => {
+		setScreen(<Result changeScreen={showPlayingScreen} totalTime={totalTime} totalWords={totalWords} correctWords={correctWords} />);
 	}
 
-	let screen
-	switch (status) {
-		case 'result':
-			screen = <Result />
-			break
-		default:
-			screen = <Playing changeStatus={handleChangeStatus} />
+	const showPlayingScreen = () => {
+		setScreen(<Playing changeScreen={showResultScreen} />);
 	}
+
+	React.useEffect(() => {
+		showPlayingScreen();
+	}, []);
 
 	return (
 		<div className='app'>

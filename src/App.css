@@ -15,6 +15,7 @@
 
 .result {
 	display: flex;
+	flex-direction: column;
 }
 
 .title {
@@ -25,8 +26,8 @@
 	background-color: black;
 	border-radius: 10px;
 	font-size: 30px;
-	width: 700px;
-	padding: 20px;
+	width: 680px;
+	padding: 20px 20px;
 	list-style-type: none;
 }
 
